@@ -960,3 +960,363 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:#616b7d;font:400 9p
 .webhook-icon{
   color:#7C5CFC;
 }
+
+
+/* Clínica Dr. Ilner Souza — site institucional */
+.project-card-wide{
+  grid-column:1 / -1;
+}
+
+.clinic-site-card{
+  display:grid;
+  grid-template-columns:minmax(0,1.45fr) minmax(320px,.55fr);
+  min-height:590px;
+}
+
+.clinic-site-showcase{
+  height:auto;
+  min-height:590px;
+  padding:26px;
+  background:
+    radial-gradient(circle at 16% 20%,rgba(62,214,255,.18),transparent 28%),
+    radial-gradient(circle at 86% 12%,rgba(124,92,255,.13),transparent 24%),
+    linear-gradient(135deg,#07131c,#0d1420 58%,#0a1720);
+}
+
+.clinic-site-carousel{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.clinic-site-shell{
+  position:relative;
+  width:100%;
+}
+
+.clinic-site-screen{
+  width:100%;
+  aspect-ratio:2.12 / 1;
+  border-radius:20px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid rgba(255,255,255,.08);
+  box-shadow:
+    0 26px 60px rgba(0,0,0,.34),
+    inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+.clinic-site-carousel .carousel-track{
+  width:100%;
+  height:100%;
+}
+
+.clinic-site-carousel .carousel-slide{
+  min-width:100%;
+  height:100%;
+  margin:0;
+  background:#fff;
+}
+
+.clinic-site-carousel .carousel-slide img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  background:#fff;
+}
+
+.clinic-site-carousel .carousel-nav{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:5;
+  width:46px;
+  height:46px;
+  background:rgba(8,14,22,.68);
+  border-color:rgba(255,255,255,.18);
+  backdrop-filter:blur(10px);
+}
+
+.clinic-site-carousel .carousel-nav.prev{
+  left:14px;
+  justify-self:auto;
+  grid-area:auto;
+}
+
+.clinic-site-carousel .carousel-nav.next{
+  right:14px;
+  justify-self:auto;
+  grid-area:auto;
+}
+
+.clinic-site-meta{
+  max-width:none;
+  text-align:left;
+  margin:18px 0 0;
+}
+
+.clinic-site-meta .carousel-title{
+  font-size:18px;
+}
+
+.clinic-site-meta .carousel-subtitle{
+  max-width:760px;
+  font-size:13px;
+}
+
+.clinic-site-carousel .carousel-dots{
+  justify-content:flex-start;
+  margin-top:14px;
+}
+
+.clinic-site-body{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:42px;
+  border-left:1px solid var(--line);
+}
+
+.clinic-site-body h3{
+  font-size:38px;
+}
+
+.clinic-site-link{
+  display:inline-flex;
+  align-items:center;
+  width:max-content;
+  margin-top:26px;
+  padding:11px 14px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  transition:.22s ease;
+}
+
+.clinic-site-link:hover{
+  transform:translateY(-2px);
+  border-color:rgba(62,214,255,.35);
+  background:rgba(62,214,255,.05);
+}
+
+@media(max-width:900px){
+  .clinic-site-card{
+    grid-template-columns:1fr;
+  }
+  .clinic-site-showcase{
+    min-height:auto;
+  }
+  .clinic-site-body{
+    border-left:0;
+    border-top:1px solid var(--line);
+    padding:34px;
+  }
+}
+
+@media(max-width:560px){
+  .clinic-site-showcase{
+    padding:14px;
+  }
+  .clinic-site-screen{
+    border-radius:14px;
+  }
+  .clinic-site-carousel .carousel-nav{
+    width:40px;
+    height:40px;
+  }
+  .clinic-site-carousel .carousel-nav.prev{left:8px;}
+  .clinic-site-carousel .carousel-nav.next{right:8px;}
+  .clinic-site-body{
+    padding:26px 22px;
+  }
+  .clinic-site-body h3{
+    font-size:30px;
+  }
+}
+
+
+/* Dra. Thatiana Machado — site institucional */
+.thatiana-site-card{
+  display:grid;
+  grid-template-columns:minmax(0,1.45fr) minmax(320px,.55fr);
+  min-height:590px;
+}
+
+.thatiana-site-showcase{
+  height:auto;
+  min-height:590px;
+  padding:26px;
+  background:
+    radial-gradient(circle at 15% 18%,rgba(154,93,201,.18),transparent 26%),
+    radial-gradient(circle at 86% 18%,rgba(52,88,66,.22),transparent 26%),
+    linear-gradient(135deg,#17241c,#23362b 54%,#171321);
+}
+
+.thatiana-site-carousel{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.thatiana-site-shell{
+  position:relative;
+  width:100%;
+}
+
+.thatiana-site-screen{
+  width:100%;
+  aspect-ratio:2.12 / 1;
+  border-radius:20px;
+  overflow:hidden;
+  background:#f4f1e9;
+  border:1px solid rgba(255,255,255,.09);
+  box-shadow:
+    0 26px 60px rgba(0,0,0,.34),
+    inset 0 1px 0 rgba(255,255,255,.09);
+}
+
+.thatiana-site-carousel .carousel-track{
+  width:100%;
+  height:100%;
+}
+
+.thatiana-site-carousel .carousel-slide{
+  min-width:100%;
+  height:100%;
+  margin:0;
+  background:#f4f1e9;
+}
+
+.thatiana-site-carousel .carousel-slide img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  background:#f4f1e9;
+}
+
+.thatiana-site-carousel .carousel-nav{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:5;
+  width:46px;
+  height:46px;
+  background:rgba(28,42,33,.72);
+  border-color:rgba(255,255,255,.17);
+  backdrop-filter:blur(10px);
+}
+
+.thatiana-site-carousel .carousel-nav:hover{
+  border-color:rgba(180,115,219,.55);
+  background:rgba(42,61,49,.88);
+}
+
+.thatiana-site-carousel .carousel-nav.prev{
+  left:14px;
+  justify-self:auto;
+  grid-area:auto;
+}
+
+.thatiana-site-carousel .carousel-nav.next{
+  right:14px;
+  justify-self:auto;
+  grid-area:auto;
+}
+
+.thatiana-site-meta{
+  max-width:none;
+  text-align:left;
+  margin:18px 0 0;
+}
+
+.thatiana-site-meta .carousel-title{
+  font-size:18px;
+  color:#f4f0f7;
+}
+
+.thatiana-site-meta .carousel-subtitle{
+  max-width:760px;
+  font-size:13px;
+  color:#bac6bd;
+}
+
+.thatiana-site-carousel .carousel-dots{
+  justify-content:flex-start;
+  margin-top:14px;
+}
+
+.thatiana-site-carousel .carousel-dot.active{
+  background:linear-gradient(90deg,#8f5aba,#c99be7);
+  box-shadow:0 10px 24px rgba(154,93,201,.22);
+}
+
+.thatiana-site-body{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:42px;
+  border-left:1px solid var(--line);
+}
+
+.thatiana-site-body h3{
+  font-size:38px;
+}
+
+.thatiana-site-link{
+  display:inline-flex;
+  align-items:center;
+  width:max-content;
+  margin-top:26px;
+  padding:11px 14px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  transition:.22s ease;
+}
+
+.thatiana-site-link:hover{
+  transform:translateY(-2px);
+  border-color:rgba(154,93,201,.42);
+  background:rgba(154,93,201,.06);
+}
+
+@media(max-width:900px){
+  .thatiana-site-card{
+    grid-template-columns:1fr;
+  }
+  .thatiana-site-showcase{
+    min-height:auto;
+  }
+  .thatiana-site-body{
+    border-left:0;
+    border-top:1px solid var(--line);
+    padding:34px;
+  }
+}
+
+@media(max-width:560px){
+  .thatiana-site-showcase{
+    padding:14px;
+  }
+  .thatiana-site-screen{
+    border-radius:14px;
+  }
+  .thatiana-site-carousel .carousel-nav{
+    width:40px;
+    height:40px;
+  }
+  .thatiana-site-carousel .carousel-nav.prev{left:8px;}
+  .thatiana-site-carousel .carousel-nav.next{right:8px;}
+  .thatiana-site-body{
+    padding:26px 22px;
+  }
+  .thatiana-site-body h3{
+    font-size:30px;
+  }
+}
